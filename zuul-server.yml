@@ -16,9 +16,9 @@ feign:
 oauth_url: http://localhost:8080/secure
 client_id: guest
 client_secret: secret
-user: /profile-service/**,/login-service/**,/admin-activities/activity
-admin: /dashboard-service/**,/branding-service/**
-open: /password-service/reset-password/**,/password-service/send-mail/** 
+user: /profile-service/**,/login-service/**,/admin-activities/activity,/password-service/change/**,/password-service/changepass/**,/password-service/passcheck/**
+admin: /dashboard-service/**,/branding-service/**,/password-service/changepass/**,/password-service/passcheck/**
+open: /password-service/reset-password/**,/password-service/send-mail/**,/password-service/reset/**
 ---
 spring:
   profiles: staging
