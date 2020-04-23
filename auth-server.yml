@@ -41,7 +41,7 @@ ui_url: http://52.205.229.238/app
 spring:
   profiles: staging
   datasource:
-    url: jdbc:postgresql://10.0.2.204:5432/user_management
+    url: jdbc:postgresql://10.0.2.204:5432/postgres
     username: postgres
     password: secretPass
 
