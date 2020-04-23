@@ -51,6 +51,9 @@ spring:
     url: jdbc:postgresql://10.0.1.159:5432/user_management
     username: postgres
     password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
 eureka:
   instance: 
     ip-address: 10.0.1.8
