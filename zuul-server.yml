@@ -18,6 +18,7 @@ client_id: guest
 client_secret: secret
 user: /profile-service/**,/login-service/**,/admin-activities/activity
 admin: /dashboard-service/**,/branding-service/**
+open: /password-service/reset-password/**,/password-service/send-mail/** 
 ---
 spring:
   profiles: staging
