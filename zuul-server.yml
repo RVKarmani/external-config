@@ -17,7 +17,7 @@ oauth_url: http://localhost:8080/secure
 client_id: guest
 client_secret: secret
 user: /admin-activities/activity,/password-service/change/**,/password-service/changepass/**,/password-service/passcheck/**
-admin: /branding-service/**,/password-service/changepass/**,/password-service/passcheck/**,/admin-activities/**,/admin-activities/activity
+admin: /branding-service/**,/admin-activities/**,/admin-activities/activity
 open: /password-service/reset-password/**,/password-service/send-mail/**,/password-service/reset/**
 ---
 spring:
