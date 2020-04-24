@@ -30,12 +30,6 @@ spring:
     url: jdbc:postgresql://10.0.2.204:5432/rules
     username: postgres
     password: secretPass
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect  
 eureka:  
   instance: 
     ip-address: 10.0.2.81
