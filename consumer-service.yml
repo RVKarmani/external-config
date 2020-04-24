@@ -48,7 +48,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
 
-topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder,loginreminder,sendnow,learning,webinar,assessment,leadership"
+topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder,loginreminder,sendnow,learning,webinar,assessment,leadership,sendnowwebinar,sendnowcontest"
 
 forgetpassword: Forgot your Password?
 changepassword: Your Password has changed.
@@ -62,6 +62,9 @@ learning: We have planned a learning course for you!
 webinar: Interactive Connect.
 assessment: Contest Alert.
 leadership: Leadership Connect.
+sendnowwebinar: Urgent Reminder.
+sendnowcontest: Urgent Reminder.
+
 
 ---
 spring:
