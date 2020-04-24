@@ -48,7 +48,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
 
-topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder"
+topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder,loginreminder,sendnow,learning,webinar,assessment,leadership"
 
 forgetpassword: Forgot your Password?
 changepassword: Your Password has changed.
@@ -56,6 +56,12 @@ newuser: Welcome to Publicis Sapient Gamification Application
 socialmedia: Social Media Alert
 coursecomplete: Congratulations, Your Course Certificate is Ready!
 startreminder: We haven't seen you in a while.
+loginreminder: We haven't seen you in a while.
+sendnow: Urgent Reminder.
+learning: We have planned a learning course for you!
+webinar: Interactive Connect.
+assessment: Contest Alert.
+leadership: Leadership Connect.
 
 ---
 spring:
