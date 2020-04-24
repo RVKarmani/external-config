@@ -13,6 +13,9 @@ feign:
     enabled: true
 spring:
   datasource: 
+    url: jdbc:postgresql://localhost:5432/rules
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
