@@ -20,6 +20,7 @@ spring:
       database: admin-activities
       authentication-database: admin
       host: localhost
+ui_url: http://localhost:3000/app
 ---
 spring:
   profiles: performance
@@ -33,6 +34,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.0.1.176:8761/eureka/eureka
+ui_url: http://18.210.136.97/app
 ---
 spring:
   profiles: staging
@@ -46,6 +48,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.0.2.140:8761/eureka/eureka
+ui_url: http://18.215.53.195/app
 ---
 spring:
   profiles: production
@@ -59,3 +62,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.0.1.12:8761/eureka/eureka
+ui_url: http://18.210.136.97/app
