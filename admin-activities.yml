@@ -28,6 +28,10 @@ ui_url: http://localhost:3000/app
 ---
 spring:
   profiles: performance
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   data:
     mongodb:
       host: 10.0.1.159
@@ -42,6 +46,10 @@ ui_url: http://18.210.136.97/app
 ---
 spring:
   profiles: staging
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   data:
     mongodb:
       host: 10.0.2.204
@@ -56,6 +64,10 @@ ui_url: http://18.215.53.195/app
 ---
 spring:
   profiles: production
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   data:
     mongodb:
       host: 10.0.1.63
