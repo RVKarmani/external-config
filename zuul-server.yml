@@ -16,7 +16,7 @@ feign:
 oauth_url: http://localhost:8061/secure
 client_id: guest
 client_secret: secret
-user: /user-management-service/api/v1/user/AdminAccess/searchUser,/user-management-service/api/v1/user/UserAccess/**,/admin-activities/nat/getTestimonialsUser,/admin-activities/nat/getNewslettersUser,/admin-activities/getAllActivityByUser/**,/rules-service/get-leaderboard,/rules-service/get-user-achievements,/password-service/change/**,/password-service/changepass/**,/password-service/passcheck/**
+user: /user-management-service/api/v1/user/AdminAccess/searchUser,/user-management-service/api/v1/user/AdminAccess/updateUser,/user-management-service/api/v1/user/UserAccess/**,/admin-activities/nat/getTestimonialsUser,/admin-activities/nat/getNewslettersUser,/admin-activities/getAllActivityByUser/**,/rules-service/get-leaderboard,/rules-service/get-user-achievements,/password-service/change/**,/password-service/changepass/**,/password-service/passcheck/**
 admin: /admin-activities/**
 open: /password-service/reset-password/**,/password-service/send-mail/**,/password-service/reset/**
 ---
