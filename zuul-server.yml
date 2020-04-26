@@ -26,7 +26,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.0.2.140:8761/eureka/eureka
-oauth_url: http://beta.gamifylearningcentre.com/secure
+oauth_url: http://10.0.2.140:8061/secure
 ---
 spring:
   profiles: performance
@@ -42,4 +42,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://10.0.1.12:8761/eureka/eureka
-oauth_url: https://app.gamifylearningcentre.com/secure
+oauth_url: https://10.0.1.12:8061/secure
