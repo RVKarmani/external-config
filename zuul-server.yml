@@ -21,6 +21,10 @@ admin: /admin-activities/**
 open: /password-service/reset-password/**,/password-service/send-mail/**,/password-service/reset/**
 ---
 spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
   profiles: staging
 eureka:
   client:
