@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/eureka
     fetchRegistry: true
   instance: 
     ip-address: localhost
@@ -18,8 +18,8 @@ spring:
       max-request-size: 500000KB
   datasource: 
     url: jdbc:postgresql://localhost:5432/user_management
-    username: user_management
-    password: usrmgmt
+    username: postgres
+    password: secretPass
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -66,11 +66,11 @@ spring:
   profiles: production
   datasource: 
     url: jdbc:postgresql://10.0.1.63:5432/user_management
-    username: user_management
-    password: usrmgmt
+    username: postgres
+    password: adInfinitumX
 eureka:
   instance: 
-    ip-address: 10.0.2.108
+    ip-address: 10.0.1.108
   client:
     serviceUrl:
       defaultZone: http://10.0.1.12:8761/eureka/eureka
