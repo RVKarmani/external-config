@@ -24,10 +24,11 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-learning: 8
-webinar: 9
-assessment: 10
-leadership: 11
+learning: 9
+webinar: 10
+assessment: 11
+leadership: 12
+cron-exp: 0 * * * * ?
 ---
 spring:
   profiles: staging
