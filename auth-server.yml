@@ -26,7 +26,7 @@ spring:
     password: secretPass
     driver-class-name: org.postgresql.Driver
   hikari:
-    maxLifetime: 300
+    maxLifetime: 120
 
 ---
 spring:
@@ -56,6 +56,7 @@ eureka:
       defaultZone: http://10.0.2.140:8761/eureka/eureka
 
 ui_url: https://beta.gamifylearningcentre.com/app
+token_validity: 3600
 ---
 spring:
   profiles: production
