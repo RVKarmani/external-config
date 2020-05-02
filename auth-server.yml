@@ -25,6 +25,9 @@ spring:
     username: postgres
     password: secretPass
     driver-class-name: org.postgresql.Driver
+  hikari:
+    maxLifetime: 300
+
 ---
 spring:
   profiles: performance
