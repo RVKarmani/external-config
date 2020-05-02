@@ -25,6 +25,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  hikari:
+    maxLifetime: 600
+
 multipart:
   enabled: true
 ui_url: http://localhost:3000/app
