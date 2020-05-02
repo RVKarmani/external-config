@@ -13,6 +13,10 @@ server:
 feign:
   hystrix:
     enabled: true
+
+ribbon:
+  ReadTimeout: 60000
+  
 oauth_url: http://localhost:8061/secure
 client_id: guest
 client_secret: secret
