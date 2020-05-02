@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka:8761/eureka/eureka
+      defaultZone: http://localhost:8761/eureka/eureka
     fetchRegistry: true
   instance: 
     preferIpAddress: true
