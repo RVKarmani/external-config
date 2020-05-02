@@ -21,9 +21,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://168.62.191.193:5432/user_management
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: secretPass
+    password: admin
     driver-class-name: org.postgresql.Driver
   hikari:
     maxLifetime: 120
