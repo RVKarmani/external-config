@@ -3,13 +3,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/eureka
     fetchRegistry: true
-  instance: 
-    preferIpAddress: true
+
 server:
   port: 8999
 feign:
   hystrix:
-    enabled: true
+    enabled: false
 spring:
   http:
     multipart:
