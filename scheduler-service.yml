@@ -28,7 +28,7 @@ learning: 9
 webinar: 10
 assessment: 11
 leadership: 12
-cron-exp: "0 0 10 * * *"
+cron-exp: "0 30 6 * * *"
 ---
 spring:
   profiles: staging
