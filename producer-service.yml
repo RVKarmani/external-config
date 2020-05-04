@@ -15,6 +15,7 @@ spring:
       missing-topics-fatal: false
 
     producer:
+      bootstrap-servers: http://localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
@@ -27,6 +28,9 @@ spring:
               headers: false
 
   datasource:
+    url: jdbc:postgresql://localhost:5432/notification
+    username: postgres
+    password: admin
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -65,7 +69,7 @@ spring:
 
 eureka:
   instance:
-    ip-address: 10.0.2.108
+    ip-address: 10.0.1.108
   client:
     serviceUrl:
       defaultZone: http://10.0.1.12:8761/eureka/eureka
