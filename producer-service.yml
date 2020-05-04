@@ -28,7 +28,7 @@ spring:
               headers: false
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/notification
+    url: jdbc:postgresql://localhost:5432/notifications
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
