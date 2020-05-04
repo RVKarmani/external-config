@@ -1,3 +1,4 @@
+
 server:
   port: 7500
 
@@ -25,6 +26,9 @@ spring:
   kafka:
     producer:
       bootstrap-servers: http://localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
     consumer:
       bootstrap-servers: http://localhost:9092
       auto-offset-reset: earliest
@@ -38,9 +42,6 @@ spring:
 
     listener:
       missing-topics-fatal: false
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
   jpa:
     properties:
@@ -71,44 +72,3 @@ assessment: Contest Alert.
 leadership: Leadership Connect.
 sendnowwebinar: Urgent Reminder.
 sendnowcontest: Urgent Reminder.
-
-
----
-spring:
-  profiles: staging
-  kafka:
-    producer:
-      bootstrap-servers: http://10.0.2.220:9092
-    consumer:
-      bootstrap-servers: http://10.0.2.220:9092
-
-  datasource:
-    url: jdbc:postgresql://10.0.2.204:5432/notifications
-    username: postgres
-    password: secretPass
-
-eureka:
-  instance:
-    ip-address: 10.0.2.81
-  client:
-    serviceUrl:
-      defaultZone: http://10.0.2.140:8761/eureka/eureka
----
-spring:
-  profiles: production
-  kafka:
-    producer:
-      bootstrap-servers: http://10.0.1.196:9092
-    consumer:
-      bootstrap-servers: http://10.0.1.196:9092
-  datasource:
-    url: jdbc:postgresql://10.0.1.63:5432/notifications
-    username: postgres
-    password: adInfinitumX
-
-eureka:
-  instance:
-    ip-address: 10.0.1.108
-  client:
-    serviceUrl:
-      defaultZone: http://10.0.1.12:8761/eureka/eureka
