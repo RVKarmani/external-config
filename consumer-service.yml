@@ -23,7 +23,10 @@ spring:
           starttls:
             enable: true
   kafka:
+    producer:
+      bootstrap-servers: http://localhost:9092
     consumer:
+      bootstrap-servers: http://localhost:9092
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
@@ -45,7 +48,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+
   datasource:
+    url:  jdbc:postgresql://localhost:5432/notifications
+    username: postgres
+    password: admin
     driver-class-name: org.postgresql.Driver
 
 topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder,loginreminder,sendnow,learning,webinar,assessment,leadership,sendnowwebinar,sendnowcontest"
@@ -101,7 +108,7 @@ spring:
 
 eureka:
   instance:
-    ip-address: 10.0.2.108
+    ip-address: 10.0.1.108
   client:
     serviceUrl:
       defaultZone: http://10.0.1.12:8761/eureka/eureka
