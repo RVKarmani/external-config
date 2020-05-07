@@ -48,7 +48,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 
   datasource:
     url:  jdbc:postgresql://localhost:5432/notifications
@@ -56,7 +56,7 @@ spring:
     password: admin
     driver-class-name: org.postgresql.Driver
 
-topics: "forgetpassword,changepassword,newuser,socialmedia,coursecomplete,startreminder,loginreminder,sendnow,learning,webinar,assessment,leadership,sendnowwebinar,sendnowcontest"
+topics: "realtime,scheduled"
 
 forgetpassword: Forgot your Password?
 changepassword: Your Password has changed.
