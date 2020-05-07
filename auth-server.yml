@@ -2,9 +2,6 @@ server:
   port: 8061
   servlet:
     context-path: /secure
-    session:
-      cookie:
-        secure: true
 
 client_id: guest
 client_secret: secret
