@@ -8,9 +8,6 @@ eureka:
     preferIpAddress: true
 server:
   port: 9009
-feign:
-  hystrix:
-    enabled: true
 spring:
   datasource: 
     url: jdbc:postgresql://localhost:5432/rules
